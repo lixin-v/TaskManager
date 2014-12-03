@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/sub_header" />
+
+    <RelativeLayout
+        style="@style/txt_row"
+        android:paddingTop="10dip"
+        android:background="@drawable/underline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_task_name_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_name"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_task_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:textSize="15sp" 
+            android:layout_toRightOf="@id/tv_task_name_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/txt_row"
+        android:background="@drawable/underline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_task_start_time_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_start_time"
+            android:textSize="15sp" />
+
+        
+         <TextView
+            android:id="@+id/tv_task_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:textSize="15sp" 
+            android:layout_toRightOf="@id/tv_task_start_time_name" /> 
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/txt_row"
+        android:background="@drawable/underline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_task_end_time_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_end_time"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_task_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:textSize="15sp" 
+            android:layout_toRightOf="@id/tv_task_end_time_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/txt_row"
+        android:background="@drawable/underline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_task_note_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_note"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_task_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:textSize="15sp" 
+            android:layout_toRightOf="@id/tv_task_note_name"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/txt_row"
+        android:background="@drawable/underline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_task_notification_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_notification"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:textSize="15sp" 
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        style="@style/txt_row"
+        android:background="@drawable/underline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_task_state_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_state"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:textSize="15sp" 
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+</LinearLayout>

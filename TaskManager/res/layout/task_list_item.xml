@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="70dip" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:layout_marginRight="3dip"
+        android:layout_marginLeft="3dip"
+        android:background="@drawable/list_item_shape" >
+
+        <TextView
+            android:id="@+id/frame_task_isfinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="未完成"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/frame_task_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignLeft="@+id/frame_task_time"
+            android:layout_alignParentTop="true"
+            android:text="name"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/frame_task_time"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/frame_task_name"
+            android:layout_marginLeft="23dp"
+            android:text="12:23-16:56"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    
+     <com.taskmanager.app.widget.ItemsViewPager  
+        android:id="@+id/tabcontent_vp"  
+        android:background="@android:color/white"  
+        android:layout_width="match_parent"  
+        android:layout_height="50dp"  
+        /> 
+
+</LinearLayout>
